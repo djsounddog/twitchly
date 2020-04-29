@@ -2,7 +2,12 @@
 
 <p>
   <strong>Url:</strong>
-  <%= @link.url %>
+  <%= link_to @link.url %>
+</p>
+
+<p>
+<strong>Short Url:</strong>
+  <%= link_to @hlink %>
 </p>
 
 <%= link_to 'Edit', edit_link_path(@link) %> |
