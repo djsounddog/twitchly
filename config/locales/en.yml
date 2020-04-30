@@ -32,7 +32,12 @@
 en:
   hello: "Hello world"
   brand: "twitcher"
+  copyright: "© Joshua Gilmore 2020"
   instruction: "Enter your target url here:"
-  result: "Here's your short link:"
+  url: "Target url:"
+  result: "Short url:"
+
+  edit: "Edit"
+  back: "Back"
 
   error_explanation: " prohibited this link from being saved"

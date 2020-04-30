@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Url:</strong>
+  <strong><%= t :url %></strong>
   <%= link_to @link.url %>
 </p>
 
 <p>
-<strong>Short Url:</strong>
+<strong><%= t :result %></strong>
   <%= link_to @hlink %>
 </p>
 
-<%= link_to 'Edit', edit_link_path(@link) %> |
-<%= link_to 'Back', links_path %>
+<%= link_to t(:edit), edit_link_path(@link) %> |
+<%= link_to t(:back), links_path %>
