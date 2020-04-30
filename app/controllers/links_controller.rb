@@ -1,9 +1,10 @@
 class LinksController < ApplicationController
-  before_action :set_link, only: %i[root show edit update destroy]
-  before_action :set_hlink, only: %i[root show create update]
+  before_action :set_link, only: %i[show edit update destroy]
+  before_action :set_hlink, only: %i[show create update]
 
   # Redirect to related url from root/:id
   def root
+    @link = Link.find(params[:short].to_i(36))
     redirect_to @link.url
   end
 
