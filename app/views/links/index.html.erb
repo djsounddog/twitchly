@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1><%= t :links_index_heading %></h1>
+<%= link_to t(:new), new_link_path %>
 
 <table>
   <thead>
@@ -21,7 +22,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to t(:new), new_link_path %>
