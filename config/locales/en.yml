@@ -37,7 +37,13 @@ en:
   url: "Target url:"
   result: "Short url:"
 
+  new_link_heading: "New Link"
+  links_index_heading: "Links"
+
+  new: "New Link"
   edit: "Edit"
   back: "Back"
+  show: "Show"
+  destroy: "Destroy"
 
   error_explanation: " prohibited this link from being saved"

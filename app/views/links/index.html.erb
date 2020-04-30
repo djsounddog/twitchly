@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Links</h1>
+<h1><%= t :links_index_heading %></h1>
 
 <table>
   <thead>
@@ -14,9 +14,9 @@
     <% @links.each do |link| %>
       <tr>
         <td><%= link.url %></td>
-        <td><%= link_to 'Show', link %></td>
-        <td><%= link_to 'Edit', edit_link_path(link) %></td>
-        <td><%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t(:show), link %></td>
+        <td><%= link_to t(:edit), edit_link_path(link) %></td>
+        <td><%= link_to t(:destroy), link, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Link', new_link_path %>
+<%= link_to t(:new), new_link_path %>
