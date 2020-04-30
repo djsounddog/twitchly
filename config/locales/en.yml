@@ -31,3 +31,6 @@
 
 en:
   hello: "Hello world"
+  brand: "twitcher"
+  instruction: "Enter your target url here:"
+  result: "Here's your short link:"
