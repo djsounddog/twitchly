@@ -7,5 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 1000.times do
-  Link.new(url: Faker::Internet.url)
+  Link.create(url: Faker::Internet.url)
 end
